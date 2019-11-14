@@ -1,7 +1,12 @@
 "use strict";
+const helloBeautiful = require('./say-hello.js');
 const $ = require('jquery');
+(()=> {
+    let sayHello = () => console.log("Hello");
+    sayHello();
 
-let sayHello = "Hello";
-console.log(sayHello);
+    $('body').css('background-color', 'blue');
 
-$('body').css('background-color', 'blue');
+    console.log(helloBeautiful);
+
+})();
